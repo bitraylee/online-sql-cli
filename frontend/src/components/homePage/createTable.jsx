@@ -1,3 +1,5 @@
+import styled from "styled-components"
+
 function addAllColumnHeaders(arr) {
 	var columnSet = []
 	for (var i = 0, l = arr.length; i < l; i++) {
@@ -24,9 +26,23 @@ function buildHtmlTable(arr) {
 	return result
 }
 
+
+
 export default function (arr) {
+	const StyledTable = styled.table`
+		border-collapse: collapse;
+		th, td {
+			font-family: "Roboto" ;
+			font-size: 0.8rem;
+			color: "#333";
+			padding: 0.7rem;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+
+		}
+	`
 	return (
-		<table>
+		<StyledTable>
 			<thead>
 				<tr>
 					{addAllColumnHeaders(arr).map((element) => {
@@ -45,6 +61,6 @@ export default function (arr) {
 					)
 				})}
 			</tbody>
-		</table>
+		</StyledTable>
 	)
 }

@@ -1,10 +1,8 @@
 import React from "react";
-// import User from "./user";
 import { stockData } from "../../database/sampleData";
-import { buildHtmlTable } from "./buildTable";
-import { createTable } from "./createTable";
+// import { buildHtmlTable } from "./buildTable";
 import createSampleTable from "./createSampleTable";
-import axios from "axios";
+// import axios from "axios";
 
 export default class SomeComponent extends React.Component {
 

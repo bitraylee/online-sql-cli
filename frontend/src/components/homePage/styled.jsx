@@ -3,6 +3,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight"
 import styled from "styled-components"
 
 
+
 const BgBox = styled.div`
 	width: 100vw;
 	height: 100vh;
@@ -31,6 +32,7 @@ const OutputBox = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-radius:10px ;
 
 	overflow: auto;
 	div {
@@ -83,4 +85,25 @@ const styledRight = styled(ChevronRightIcon)`
 	/* font-size:50px; */
 	color: #333;
 `
-export { BgBox, FlexContainer, OutputBox, InputBox, SubmitButton, styledRight }
+
+const ClearButton = styled.button`
+	width:60px;
+	height: 60px;
+	background-color: #fefefe;
+	color: #333;
+	
+	position: absolute;
+	z-index: 2;
+	right: 40px;
+	top: 40px;
+	border:none;
+	border-radius: 10px;
+	text-align:center;
+	transition: 0.2s ease-in-out;
+	&:hover{
+		box-shadow: 0px 0px 23px -6px rgba(0,0,0,0.5);
+		transition: 0.2s ease-in-out;
+	}
+`
+
+export { BgBox, FlexContainer, OutputBox, InputBox, SubmitButton, styledRight, ClearButton }

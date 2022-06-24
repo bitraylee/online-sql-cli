@@ -1,11 +1,12 @@
 import { stockData } from "../database/sampleData"
-
+import { handleSelect } from "./handleSelect"
 export function resolveQuery(query) {
 	query = query.toUpperCase()
 	var querySplit = query.split(" ")
 	switch (querySplit[0]) {
 		case "SELECT":
-			return stockData
+			return handleSelect(query)
+		// return stockData
 		case "UPDATE":
 			return [
 				{

@@ -12,11 +12,20 @@ Create, design and implement a web-based application capable of running SQL quer
 
 <br></br>
 
-## Solution
+# Solution
 
--   The web-application that support limited number of syntactically correct sql queries and displays their respective outputs.
--   The application uses static data to diplay results.
+## Overview
+
+-   A web-application that supports limited number of syntactically correct SQL queries and displays their respective outputs.
+-   The application uses static data to display results.
 -   The application also supports for a **Clear Console** button to clear the output area.
+-   The application is built on **ReactJS**
+-   **Packages Installed** <br>
+styled-components<br>
+@mui/icons-material<br>
+@mui/material<br>
+
+
 
 ## Supported Queries
 
@@ -48,11 +57,22 @@ https://user-images.githubusercontent.com/62213450/176115667-37d98938-f823-4e40-
 ![image](https://user-images.githubusercontent.com/62213450/176116468-3ca64ff8-fbab-427a-82b3-e4005996e50e.png)
 
 
+## Optimizations
+
+-   Updates the component only when submit is triggered and hence reducing number of redundant renders.
+
+-   Reduced updates in the query state by using a pseudo state.
+
+-   createTable.jsx component creates a React Table element from json array.
+
+
+
+
 ## Future Scope
 
--   To add query resolution for advanced queries such as **GROUP BY, JOINS and Nested Queries**
+-   To add query resolution for advanced queries such as **GROUP BY, JOINS and Nested Queries**.
 
--   To add functional backend instead of resloving queries in the frontend
+-   To add a functional backend with database implementation instead of resloving queries in the frontend..
 
 -   To add a **history** button for the user to take a look at the query and output history.
 

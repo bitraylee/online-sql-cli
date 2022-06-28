@@ -38,6 +38,16 @@ Create, design and implement a web-based application capable of running SQL quer
 
 ## Demonstration
 
+
+https://user-images.githubusercontent.com/62213450/176115667-37d98938-f823-4e40-9e6f-bff5760fa4f1.mov
+
+<!---[![IMAGE_ALT](https://img.youtube.com/vi/mS1xHup75xY/maxresdefault.jpg)](https://youtu.be/mS1xHup75xY)--->
+
+## Page Load Time
+
+![image](https://user-images.githubusercontent.com/62213450/176116468-3ca64ff8-fbab-427a-82b3-e4005996e50e.png)
+
+
 ## Future Scope
 
 -   To add query resolution for advanced queries such as **GROUP BY, JOINS and Nested Queries**

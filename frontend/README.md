@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# SQL Command Line
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### <a href="https://sqlwebapp.netlify.app/" style="color: orange">Link to Website &#8594;</a>
 
-## Available Scripts
+<br></br>
 
-In the project directory, you can run:
+## Challenge Statement
 
-### `npm start`
+Create, design and implement a web-based application capable of running SQL queries and displaying the results of said query. The application must include a space which accepts SQL queries in the form of user inputs, then runs the given query, and displays the result within the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### <a href="https://atlanhq.notion.site/Task-Atlan-Frontend-Engineer-80ca8e35cc694e31bfd6b415d328269c" style="color: orange">Complete Problem Statement &#8594;</a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br></br>
 
-### `npm test`
+# Solution
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Overview
 
-### `npm run build`
+-   A web-application that supports limited number of syntactically correct SQL queries and displays their respective outputs.
+-   The application uses static data to display results.
+-   The application also supports for a **Clear Console** button to clear the output area.
+-   The application is built on **ReactJS**
+-   **Packages Installed** <br>
+styled-components<br>
+@mui/icons-material<br>
+@mui/material<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Supported Queries
 
-### `npm run eject`
+-   SELECT \* FROM [table name]
+-   SELECT COUNT(\*) FROM [table name]
+-   SELECT [column names] FROM [table name]
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### <p style="">Queries with dummy output</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   UPDATE [table name]
+-   CREATE [table name]
+-   DELETE [table name]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Available Tables
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-   **stockData**
+-   **softDrinks**
+-   **currentTables** _Contains the table names of the available tables_
 
-## Learn More
+## Demonstration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+https://user-images.githubusercontent.com/62213450/176115667-37d98938-f823-4e40-9e6f-bff5760fa4f1.mov
 
-### Code Splitting
+<!---[![IMAGE_ALT](https://img.youtube.com/vi/mS1xHup75xY/maxresdefault.jpg)](https://youtu.be/mS1xHup75xY)--->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Page Load Time
 
-### Analyzing the Bundle Size
+![image](https://user-images.githubusercontent.com/62213450/176116468-3ca64ff8-fbab-427a-82b3-e4005996e50e.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Optimizations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+-   Updates the component only when submit is triggered and hence reducing number of redundant renders.
 
-### Advanced Configuration
+-   Reduced updates in the query state by using a pseudo state.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-   createTable.jsx component creates a React Table element from json array.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Scope
+
+-   To add query resolution for advanced queries such as **GROUP BY, JOINS and Nested Queries**.
+
+-   To add a functional backend with database implementation instead of resloving queries in the frontend..
+
+-   To add a **history** button for the user to take a look at the query and output history.
+
+-   Implement server side-pagination with datagrid for viewing large tables.
